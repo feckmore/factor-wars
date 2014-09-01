@@ -1,0 +1,9 @@
+td{
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+#scores td{
+  font-size: 4em;
+  width: 50%;
+}

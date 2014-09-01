@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="factorWars">
+  <head>
+    <title>Factor Wars</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+
+  <body ng-controller="FactorController as factor">
+    <table id="scores" class="table table-bordered">
+      <tbody>
+        <tr>
+          <td class="info">{{factor.score[0]}}</td>
+          <td class="danger">{{factor.score[1]}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <td ng-class="factor.getClass(1)" ng-click="factor.select(1)">1</td>
+          <td ng-class="factor.getClass(2)" ng-click="factor.select(2)">2</td>
+          <td ng-class="factor.getClass(3)" ng-click="factor.select(3)">3</td>
+          <td ng-class="factor.getClass(4)" ng-click="factor.select(4)">4</td>
+          <td ng-class="factor.getClass(5)" ng-click="factor.select(5)">5</td>
+        </tr>
+        <tr>
+          <td ng-class="factor.getClass(6)" ng-click="factor.select(6)">6</td>
+          <td ng-class="factor.getClass(7)" ng-click="factor.select(7)">7</td>
+          <td ng-class="factor.getClass(8)" ng-click="factor.select(8)">8</td>
+          <td ng-class="factor.getClass(9)" ng-click="factor.select(9)">9</td>
+          <td ng-class="factor.getClass(10)" ng-click="factor.select(10)">10</td>
+        </tr>
+        <tr>
+          <td ng-class="factor.getClass(11)" ng-click="factor.select(11)">11</td>
+          <td ng-class="factor.getClass(12)" ng-click="factor.select(12)">12</td>
+          <td ng-class="factor.getClass(13)" ng-click="factor.select(13)">13</td>
+          <td ng-class="factor.getClass(14)" ng-click="factor.select(14)">14</td>
+          <td ng-class="factor.getClass(15)" ng-click="factor.select(15)">15</td>
+        </tr>
+        <tr>
+          <td ng-class="factor.getClass(16)" ng-click="factor.select(16)">16</td>
+          <td ng-class="factor.getClass(17)" ng-click="factor.select(17)">17</td>
+          <td ng-class="factor.getClass(18)" ng-click="factor.select(18)">18</td>
+          <td ng-class="factor.getClass(19)" ng-click="factor.select(19)">19</td>
+          <td ng-class="factor.getClass(20)" ng-click="factor.select(20)">20</td>
+        </tr>
+        <tr>
+          <td ng-class="factor.getClass(21)" ng-click="factor.select(21)">21</td>
+          <td ng-class="factor.getClass(22)" ng-click="factor.select(22)">22</td>
+          <td ng-class="factor.getClass(23)" ng-click="factor.select(23)">23</td>
+          <td ng-class="factor.getClass(24)" ng-click="factor.select(24)">24</td>
+          <td ng-class="factor.getClass(25)" ng-click="factor.select(25)">25</td>
+        </tr>
+        <tr>
+          <td ng-class="factor.getClass(26)" ng-click="factor.select(26)">26</td>
+          <td ng-class="factor.getClass(27)" ng-click="factor.select(27)">27</td>
+          <td ng-class="factor.getClass(28)" ng-click="factor.select(28)">28</td>
+          <td ng-class="factor.getClass(29)" ng-click="factor.select(29)">29</td>
+          <td ng-class="factor.getClass(30)" ng-click="factor.select(30)">30</td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
