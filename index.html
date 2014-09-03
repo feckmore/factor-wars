@@ -10,12 +10,25 @@
     <table id="scores" class="table table-bordered">
       <tbody>
         <tr>
-          <td class="info">{{factor.score[0]}}</td>
-          <td class="danger">{{factor.score[1]}}</td>
+          <td class="info" no-wrap>
+            <span class="glyphicon glyphicon-star" ng-show="factor.isWinner(0)"></span>
+            <span title="Next Turn" class="glyphicon glyphicon-chevron-right" ng-show="factor.showTurn(0)"></span>
+            {{factor.score[0]}}
+            <!-- <span title="Next Turn" class="glyphicon glyphicon-chevron-left" ng-show="factor.showTurn(0)"></span> -->
+          </td>
+          <td class="danger">
+            <span class="glyphicon glyphicon-star" ng-show="factor.isWinner(1)"></span>
+            <span title="Next Turn" class="glyphicon glyphicon-chevron-right" ng-show="factor.showTurn(1)"></span>
+            {{factor.score[1]}}
+            <!-- <span title="Next Turn" class="glyphicon glyphicon-chevron-left" ng-show="factor.showTurn(1)"></span> -->
+          </td>
         </tr>
       </tbody>
     </table>
-    <table class="table table-bordered">
+<!--     <div>
+      {{factor.gameOver()}}
+    </div>
+ -->    <table class="table table-bordered">
       <tbody>
         <tr>
           <td ng-class="factor.getClass(1)" ng-click="factor.select(1)">1</td>

@@ -7,3 +7,13 @@ td{
   font-size: 4em;
   width: 50%;
 }
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+  font-size: 0.7em;
+  margin: -10px;
+  color: rgb(119, 136, 153); /*#3C763D;*/
+}
+.glyphicon-star{
+  font-size: 0.7em;
+  margin: -10px;
+  color: #3C763D;
+}
